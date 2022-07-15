@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dev Skills Shopping Cart</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo.jpg" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-cart">
+                            <div id="shopping-cart">
+                                    <table id="cart-content" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Name</th>
+                                                <th>Price</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           <!-- used for testing only
+                                            <tr>
+                                                 <td>
+                                                     <img src="img/course-css.jpg" width="120">
+                                                 </td>
+                                                 <td>CSS</td>
+                                                 <td>$15</td>
+                                                 <td>
+                                                     <a href="#" class="remove">X</a>
+                                                 </td>
+                                            </tr>
+                                            -->
+                                        </tbody>
+                                    </table>
+
+                                    <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="hero-content">
+                                <h2 id="learn">Learn Web Development Skills</h2>
+                                <p class="tagline"> Special Offer, any course $15</p>
+                                <form action="#" id="search" method="post" class="form">
+                                    <input class="u-full-width" type="text" placeholder="What Do You Want To Learn? " id="search-course">
+                                    <input type="submit" id="submit-search-course" class="submit-search-course">
+                                </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bar">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icon icon1">
+                        <p>Basic, Intermediate & Advanced<br>
+                        Web Development Skills</p>
+                    </div>
+                    <div class="four columns icon icon2">
+                        <p>Projects Included<br>
+                        Build Your Portfolio of Projects</p>
+                    </div>
+                    <div class="four columns icon icon3">
+                        <p>Lifetime Access <br>
+                        No deadlines - Self Paced</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="courses-list" class="container">
+        <h1 id="heading" class="heading">Online Courses</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course-github.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>Git / GitHub</h4>
+                        <p>Susan Winters</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course-visual-studio-code.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>Visual Studio Code</h4>
+                            <p>Susan Winters</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">Add to Cart</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course-node-npm.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>NodeJS / NPM</h4>
+                            <p>Susan Winters</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course-html.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>HTML</h4>
+                        <p>Susan Winters</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course-css.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>CSS</h4>
+                            <p>Susan Winters</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="5">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course-javascript.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>JavaScript</h4>
+                            <p>Susan Winters</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="6">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course-api-json.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>API / JSON</h4>
+                        <p>Susan Winters</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="7">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course-vue.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>VueJS</h4>
+                            <p>Susan Winters</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="8">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course-react.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>ReactJS</h4>
+                            <p>Susan Winters</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="9">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+
+  
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course-csharp.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>C# </h4>
+                        <p>Susan Winters</p>
+                        <img src="img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="10">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course-aspnet-mvc.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>ASP.NET</h4>
+                            <p>Susan Winters</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="11">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course-sql-server.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>SQL Server</h4>
+                            <p>Susan Winters</p>
+                            <img src="img/stars.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="12">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <p><i>This website is for educational purposes only. No money is collected.
+                         No personal data is kept on the webserver used to host this site.
+                          </i></p>
+                          <p>This site demostrates code for adding items to a shopping cart and saving that information into local storage.
+                            It also shows how to remove specific items from the shopping cart as well as clear out the entire contents and then remove all items from local storage.
+                            <h5>JavaScript:</h5>
+                          </p>
+                    </div>
+                    </div>
+
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="primary" class="menu">
+                                <a class="link" href="#">.createElement('tr');</a>
+                                <a class="link" href="#">.appendChild(row)</a>
+                                <a class="link" href="#">.getAttribute('data-id')</a>
+                                <a class="link" href="#">classList.contains</a>
+                                <a class="link" href="#">.parentElement.remove()</a>
+   
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secondary" class="menu">
+                                <a class="link" href="#">Click Events</a>
+                                <a class="link" href="#">.addEventListener</a>
+                                <a class="link" href="#">Reading Object Properties</a>
+                                <a class="link" href="#">.push item into Array</a>
+                                <a class="link" href="#">.splice(index, 1)</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                        <nav id="primary" class="menu">
+                            <a class="link" href="#">localStorage.setItem</a>
+                            <a class="link" href="#">localStorage.getItem</a>
+                            <a class="link" href="#">localStorage.clear();</a>
+                            <a class="link" href="#">JSON.stringify</a>
+                          
+                        </nav>
+                </div>
+               
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
